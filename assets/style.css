@@ -16,9 +16,8 @@ body {
   justify-content: flex-start;
   padding: 60px 20px;
 
-  background-image: 
-    linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.85)),
-    url('bg.jpg'); /* <-- correct relative path from CSS */
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.85)), url('bg.jpg');
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

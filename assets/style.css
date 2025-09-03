@@ -126,19 +126,26 @@ iframe {
 .footer {
   margin-top: 60px;
   text-align: center;
-  padding: 20px 15px;
-  background: rgba(20, 20, 20, 0.9); /* dark background */
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px 20px;
+  background: rgba(0,0,0,0.7); /* darker footer for contrast */
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+.footer-email {
+  display: inline-block;
+  width: 40px;    /* explicitly set width */
+  height: 40px;   /* explicitly set height */
+  margin-bottom: 10px;
 }
 
 .footer-email img {
-  width: 30px; /* matches main links */
-  height: auto;
+  width: 100%;    /* fill the container */
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: invert(1); /* makes black icon white */
   transition: transform 0.3s ease;
 }
 
@@ -149,7 +156,7 @@ iframe {
 .footer p {
   font-size: 0.9rem;
   color: rgba(255,255,255,0.7);
-  margin: 0;
+  margin-top: 12px;
 }
 
 /* MOBILE RESPONSIVENESS */

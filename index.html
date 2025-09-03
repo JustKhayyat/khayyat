@@ -5,70 +5,229 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Khayyat — Producer & Sound Engineer</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/khayyat-favicon.png">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/khayyat-favicon.png" />
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.85)),
+                  url('assets/bg.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 60px 20px;
+    }
+
+    /* LOGO */
+    .logo {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+
+    /* HEADINGS */
+    h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    /* BIO SECTION */
+    .bio {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      line-height: 1.7;
+      font-weight: 300;
+      font-size: 1.2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .bio p + p {
+      margin-top: 15px;
+    }
+
+    .bio:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    /* LINKS / ICONS */
+    .links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 30px auto;
+    }
+
+    .links a {
+      display: inline-block;
+      width: auto;
+    }
+
+    .links a img {
+      width: 36px;
+      height: auto;
+      max-width: 50px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .links a:hover img {
+      transform: scale(1.1);
+    }
+
+    /* FEATURED SECTION */
+    .featured {
+      margin-top: 50px;
+      margin-bottom: 60px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      max-height: 360px;
+    }
+
+    /* PRESS SECTION */
+    .press {
+      margin-top: 50px;
+      margin-bottom: 60px;
+    }
+
+    .press-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .press-links a {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+
+    .press-links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.02);
+    }
+
+    /* MOBILE RESPONSIVENESS */
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        max-height: 250px;
+      }
+
+      body {
+        padding: 40px 15px;
+      }
+
+      .bio {
+        padding: 15px;
+        margin: 25px auto;
+        font-size: 1rem;
+      }
+
+      .links {
+        gap: 15px;
+        margin: 25px auto;
+      }
+
+      .links a img {
+        width: 32px;
+      }
+
+      .featured {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .press {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- LOGO -->
   <img src="assets/khayyat-logo.png" alt="Khayyat Logo" class="logo">
 
   <!-- BIO -->
-  <section class="bio">
+  <div class="bio">
     <p>
-      Khayyat is a Palestinian producer and sound engineer, and co-founder of <strong>SVNBIRDS</strong>, known for his work with artists in the West Asia and North Africa (WANA) region and beyond. 
-      He has collaborated with leading names including Soulja, Dafencii, and Montiyago, earning a reputation as 
-      “your favorite artist’s favorite artist.”
+      Khayyat is a Palestinian producer and co-founder of <strong>SVNBIRDS</strong>, known for his work with artists in the West Asia and North Africa (WANA) region and beyond.
     </p>
     <p>
-      With placements on the Hulu series <em>Ramy</em> and the Netflix series <em>Clickbait</em>, 
-      Khayyat continues to shape the sound of contemporary hip hop and trap from the region to the world.
+      He has collaborated with leading names including Soulja, Dafencii, and Montiyago, earning a reputation as “your favorite artist’s favorite artist.” With placements on the Hulu series <em>Ramy</em> and the Netflix series <em>Clickbait</em>, Khayyat continues to shape the sound of contemporary hip hop and trap from the region to the world.
     </p>
-  </section>
+  </div>
 
-  <!-- LINKS -->
- <div class="links">
-  <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut" target="_blank">
-    <img src="assets/spotify.png" alt="Spotify">
-  </a>
-  <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank">
-    <img src="assets/apple.png" alt="Apple Music">
-  </a>
-  <a href="https://soundcloud.com/khvyyvt" target="_blank">
-    <img src="assets/soundcloud.png" alt="SoundCloud">
-  </a>
-  <a href="https://www.instagram.com/justkhayyat" target="_blank">
-    <img src="assets/instagram.png" alt="Instagram">
-  </a>
-  <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank">
-    <img src="assets/youtube.png" alt="YouTube">
-  </a>
-  <a href="https://www.tiktok.com/@justkhayyat" target="_blank">
-    <img src="assets/tiktok.png" alt="TikTok">
-  </a>
-  <a href="mailto:khayyat@svnbirds.com" target="_blank">
-    <img src="assets/email.png" alt="Email">
-  </a>
-</div>
-
+  <!-- LINKS / ICONS -->
+  <div class="links">
+    <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut" target="_blank"><img src="assets/spotify.png" alt="Spotify"></a>
+    <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank"><img src="assets/apple.png" alt="Apple Music"></a>
+    <a href="https://soundcloud.com/khvyyvt" target="_blank"><img src="assets/soundcloud.png" alt="SoundCloud"></a>
+    <a href="https://www.instagram.com/justkhayyat" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+    <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank"><img src="assets/youtube.png" alt="YouTube"></a>
+    <a href="https://www.tiktok.com/@justkhayyat" target="_blank"><img src="assets/tiktok.png" alt="TikTok"></a>
+    <a href="mailto:khayyat@svnbirds.com" target="_blank"><img src="assets/email.png" alt="Email"></a>
+  </div>
 
   <!-- FEATURED WORK -->
   <section class="featured">
     <h2>Featured Work</h2>
+
     <!-- Spotify embed -->
     <iframe style="border-radius:12px" 
             src="https://open.spotify.com/embed/artist/0ZymXKuHy9Sqg2X5IEwLut?utm_source=generator" 
-            height="380" frameBorder="0" 
+            height="360" frameborder="0" 
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
             loading="lazy">
     </iframe>
 
     <!-- YouTube embed -->
-    <iframe height="400" 
+    <iframe height="360" 
             src="https://www.youtube.com/embed/4TK4TTx7ivg" 
             title="YouTube video player" 
             frameborder="0" 
@@ -77,7 +236,7 @@
     </iframe>
   </section>
 
-  <!-- PRESS -->
+  <!-- PRESS SECTION -->
   <section class="press">
     <h2>Press</h2>
     <div class="press-links">
@@ -89,8 +248,4 @@
       </a>
       <a href="https://scenenoise.com/Features/Here-are-All-the-Arab-Songs-You-Can-Hear-on-Season-Three-of-Ramy" target="_blank">
         SceneNoise — All the Arab Songs You Can Hear on Season Three of Ramy
-      </a>
-    </div>
-  </section>
-</body>
-</html>
+      </

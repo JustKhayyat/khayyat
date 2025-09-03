@@ -18,6 +18,7 @@ body {
   padding: 60px 20px;
 }
 
+/* LOGO */
 .logo {
   max-width: 400px;
   width: 100%;
@@ -26,6 +27,7 @@ body {
   margin: 0 auto 30px auto;
 }
 
+/* HEADINGS */
 h2 {
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
@@ -36,7 +38,7 @@ h2 {
 /* BIO SECTION */
 .bio {
   max-width: 700px;
-  margin: 40px auto; /* added spacing above and below */
+  margin: 40px auto; /* spacing above and below */
   padding: 25px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
@@ -56,14 +58,14 @@ h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
-/* LINKS */
+/* LINKS / ICONS */
 .links {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin: 30px auto; /* slightly tighter spacing above & below */
+  margin: 30px auto; /* spacing above & below */
 }
 
 .links a {
@@ -72,7 +74,7 @@ h2 {
 }
 
 .links a img {
-  width: 36px;      /* fixed desktop size */
+  width: 36px;      /* desktop size */
   height: auto;
   max-width: 50px;  /* prevents overscaling on large screens */
   display: block;
@@ -90,13 +92,16 @@ h2 {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* spacing between embeds */
 }
 
 iframe {
   width: 100%;
   border: none;
   border-radius: 12px;
-  margin-bottom: 20px;
+  max-height: 360px; /* limit height on desktop */
 }
 
 /* PRESS SECTION */
@@ -136,7 +141,7 @@ iframe {
   }
 
   iframe {
-    height: 250px;
+    max-height: 250px; /* smaller on mobile */
   }
 
   body {

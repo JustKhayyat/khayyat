@@ -36,7 +36,7 @@ h2 {
 /* BIO SECTION */
 .bio {
   max-width: 700px;
-  margin: 30px auto;
+  margin: 40px auto; /* added spacing above and below */
   padding: 25px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
@@ -44,10 +44,16 @@ h2 {
   font-weight: 300;
   font-size: 1.2rem;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .bio p + p {
   margin-top: 15px;
+}
+
+.bio:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 /* LINKS */
@@ -57,17 +63,18 @@ h2 {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin: 40px auto;
+  margin: 30px auto; /* slightly tighter spacing above & below */
 }
 
 .links a {
-  display: inline-block;  /* prevent flex from stretching it */
-  width: auto;            /* allow image to define size */
+  display: inline-block;
+  width: auto;
 }
 
 .links a img {
-  width: 40px;     /* fixed icon width */
-  height: auto;    /* maintain aspect ratio */
+  width: 36px;      /* fixed desktop size */
+  height: auto;
+  max-width: 50px;  /* prevents overscaling on large screens */
   display: block;
   transition: transform 0.3s ease;
 }
@@ -75,7 +82,6 @@ h2 {
 .links a:hover img {
   transform: scale(1.1);
 }
-
 
 /* FEATURED SECTION */
 .featured {
@@ -145,7 +151,11 @@ iframe {
 
   .links {
     gap: 15px;
-    margin: 30px auto;
+    margin: 25px auto;
+  }
+
+  .links a img {
+    width: 32px; /* slightly smaller on mobile */
   }
 
   .featured {

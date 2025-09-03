@@ -4,29 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khayyat — Producer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-    body { 
-      margin: 0; 
-      font-family: Arial, sans-serif; 
-      background: black; 
-      color: white; 
-      text-align: center; 
-      padding: 50px;
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
     }
-    h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    p { font-size: 1.2rem; color: #aaa; }
-    a { color: #1DB954; text-decoration: none; margin: 10px; font-size: 1.1rem; }
-    .links { margin-top: 2rem; }
+    h1 {
+      font-family: 'Bebas Neue', 'Anton', sans-serif;
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-bottom: 2rem;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    a {
+      display: block;
+      padding: 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    /* Platform colors */
+    a.spotify { background: #1DB954; color: #fff; }
+    a.apple { background: #000; border: 2px solid #fff; color: #fff; }
+    a.youtube { background: #FF0000; color: #fff; }
+    a.anghami { background: #6f2dbd; color: #fff; }
+    a.soundcloud { background: #ff7700; color: #fff; }
+    a.instagram { background: #E1306C; color: #fff; }
+    a.tiktok { background: #010101; border: 2px solid #fff; color: #fff; }
+    a.email { background: #333; color: #fff; }
+    a:hover { opacity: 0.85; transform: translateY(-2px); }
   </style>
 </head>
 <body>
   <h1>Khayyat</h1>
   <p>Producer • Sound Designer • SVNBIRDS</p>
-  
+
   <div class="links">
-    <a href="https://open.spotify.com/" target="_blank">Spotify</a>
-    <a href="https://music.apple.com/" target="_blank">Apple Music</a>
-    <a href="https://instagram.com/" target="_blank">Instagram</a>
+    <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut?si=vcQuqRvcQMGZUPyvrr7gXQ" target="_blank" class="spotify">Spotify</a>
+    <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank" class="apple">Apple Music</a>
+    <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank" class="youtube">YouTube</a>
+    <a href="https://play.anghami.com/artist/6728735" target="_blank" class="anghami">Anghami</a>
+    <a href="https://soundcloud.com/khvyyvt" target="_blank" class="soundcloud">SoundCloud</a>
+    <a href="https://www.instagram.com/justkhayyat" target="_blank" class="instagram">Instagram</a>
+    <a href="https://www.tiktok.com/@justkhayyat" target="_blank" class="tiktok">TikTok</a>
+    <a href="mailto:khayyat@svnbirds.com" class="email">Email</a>
   </div>
 </body>
 </html>

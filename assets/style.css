@@ -60,16 +60,22 @@ h2 {
   margin: 40px auto;
 }
 
+.links a {
+  display: inline-block;  /* prevent flex from stretching it */
+  width: auto;            /* allow image to define size */
+}
+
 .links a img {
-  width: 35px;  /* smaller and proportional */
-  height: 35px;
+  width: 40px;     /* fixed icon width */
+  height: auto;    /* maintain aspect ratio */
   display: block;
   transition: transform 0.3s ease;
 }
 
 .links a:hover img {
-  transform: scale(1.1); /* still has hover effect */
+  transform: scale(1.1);
 }
+
 
 /* FEATURED SECTION */
 .featured {

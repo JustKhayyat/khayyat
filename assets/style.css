@@ -123,12 +123,15 @@ iframe {
 }
 
 /* FOOTER */
+/* FOOTER */
 .footer {
   margin-top: 60px;
   text-align: center;
-  padding: 30px 20px 20px 20px;
-  background: rgba(0,0,0,0.5);
-  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 25px 20px;
+  background: rgba(255, 255, 255, 0.1); /* subtle light overlay for contrast */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px); /* makes it stand out but not harsh */
+  color: #fff;
 }
 
 .footer-email {
@@ -137,10 +140,11 @@ iframe {
 }
 
 .footer-email img {
-  width: 40px;   /* same as main social icons */
+  width: 35px;   /* smaller, matches other icons better */
   height: auto;
   display: block;
   transition: transform 0.3s ease;
+  filter: invert(1); /* if email icon is black, this will make it white */
 }
 
 .footer-email img:hover {
@@ -152,7 +156,6 @@ iframe {
   color: rgba(255,255,255,0.7);
   margin-top: 12px;
 }
-
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {

@@ -2,132 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khayyat — Producer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khayyat — Producer & Sound Engineer</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    /* RESET */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Inter', sans-serif;
-      background: url('https://images.unsplash.com/photo-1614850523232-1c3eafd75e55?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-      background-size: cover;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url('https://images.unsplash.com/photo-1520975869010-2f0d1f1700f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')
+        no-repeat center center/cover;
       color: #fff;
       text-align: center;
-    }
-    .overlay {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.85);
-      z-index: 0;
-    }
-    .content {
-      position: relative;
-      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       padding: 60px 20px;
-      max-width: 800px;
-      margin: 0 auto;
     }
+
     h1 {
-      font-family: 'Bebas Neue', 'Anton', sans-serif;
-      font-size: 5rem;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4rem;
       letter-spacing: 3px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 10px;
     }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
     p {
       font-size: 1.2rem;
-      color: #bbb;
-      margin-bottom: 2.5rem;
+      margin-bottom: 30px;
+      font-weight: 300;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
+
     .links {
       display: flex;
       flex-direction: column;
       gap: 15px;
-      max-width: 320px;
-      margin: 0 auto;
-    }
-    a {
-      display: block;
-      padding: 14px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: bold;
-      background: rgba(255, 255, 255, 0.08);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      transition: all 0.3s ease;
-    }
-    a:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: scale(1.03);
+      max-width: 300px;
+      margin: 0 auto 60px auto;
     }
 
-    section {
-      margin-top: 80px;
+    .links a {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-size: 1rem;
     }
-    .about p {
+
+    .links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.02);
+    }
+
+    /* PRESS SECTION */
+    .press {
+      margin-top: 60px;
+    }
+
+    .press-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
       max-width: 600px;
       margin: 0 auto;
-      color: #ddd;
-      line-height: 1.6;
     }
-    .featured iframe {
-      border-radius: 12px;
-      width: 100%;
-      max-width: 400px;
-      height: 352px;
+
+    .press-links a {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-size: 1rem;
     }
-    .highlights {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      font-weight: bold;
-      margin-top: 40px;
-      color: #888;
+
+    .press-links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="content">
-    <!-- HERO -->
-    <h1>Khayyat</h1>
-    <p>Producer • Sound Engineer</p>
+  <h1>Khayyat</h1>
+  <p>Producer & Sound Engineer</p>
 
-    <div class="links">
-      <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut?si=vcQuqRvcQMGZUPyvrr7gXQ" target="_blank">Spotify</a>
-      <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank">Apple Music</a>
-      <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank">YouTube</a>
-      <a href="https://play.anghami.com/artist/6728735" target="_blank">Anghami</a>
-      <a href="https://soundcloud.com/khvyyvt" target="_blank">SoundCloud</a>
-      <a href="https://www.instagram.com/justkhayyat" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@justkhayyat" target="_blank">TikTok</a>
-      <a href="mailto:khayyat@svnbirds.com">Email</a>
-    </div>
+  <!-- BIO -->
+  <p>
+    Khayyat is a Palestinian producer and co-founder of <strong>SVNBIRDS</strong>, known for his work with artists in the West Asia and North Africa (WANA) region and beyond. 
+    He has collaborated with leading names including Soulja, Dafencii, and Montiyago, earning a reputation as 
+    “your favorite artist’s favorite artist.” With placements on the Hulu series <em>Ramy</em> and the Netflix series <em>Clickbait</em>, 
+    Khayyat continues to shape the sound of contemporary hip hop and trap from the region to the world.
+  </p>
 
-    <!-- ABOUT -->
-    <section class="about">
-      <h2>About</h2>
-      <p>Khayyat is a Palestinian producer and sound engineer blending Middle Eastern textures with modern hip-hop and trap. With releases across major streaming platforms, he’s building a distinct sonic identity that bridges cultures and sounds.</p>
-    </section>
-
-    <!-- FEATURED WORK -->
-    <section class="featured">
-      <h2>Featured Work</h2>
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0ZymXKuHy9Sqg2X5IEwLut?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </section>
-
-    <!-- HIGHLIGHTS -->
-    <section class="highlights">
-      <span>Spotify Playlists</span>
-      <span>Anghami Charts</span>
-      <span>SoundCloud Buzz</span>
-      <span>Press Features</span>
-    </section>
+  <!-- LINKS -->
+  <div class="links">
+    <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut" target="_blank">Spotify</a>
+    <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank">Apple Music</a>
+    <a href="https://soundcloud.com/khvyyvt" target="_blank">SoundCloud</a>
+    <a href="https://www.instagram.com/justkhayyat" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@justkhayyat" target="_blank">TikTok</a>
+    <a href="mailto:khayyat@svnbirds.com" target="_blank">Email</a>
   </div>
+
+  <!-- PRESS -->
+  <section class="press">
+    <h2>Press</h2>
+    <div class="press-links">
+      <a href="https://scenenoise.com/New-Music/Tageel-and-Khayyat-Delve-Into-Atmospheric-Trap-in-Langa" target="_blank">
+        SceneNoise — Tageel and Khayyat Delve Into Atmospheric Trap in ‘Langa’
+      </a>
+      <a href="https://www.deathordesire.com/post/khayyat-x-77-x-cliff-introduce-their-amazing-track-cold" target="_blank">
+        DeathOrDesire — Khayyat x 77 x Cliff Introduce Their Amazing Track ‘Cold’
+      </a>
+      <a href="https://scenenoise.com/Features/Here-are-All-the-Arab-Songs-You-Can-Hear-on-Season-Three-of-Ramy" target="_blank">
+        SceneNoise — All the Arab Songs You Can Hear on Season Three of Ramy
+      </a>
+    </div>
+  </section>
 </body>
 </html>

@@ -12,21 +12,36 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #000;
+      background: url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 60px 20px;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 0;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
     }
     h1 {
       font-family: 'Bebas Neue', 'Anton', sans-serif;
-      font-size: 4rem;
-      letter-spacing: 2px;
+      font-size: 5rem;
+      letter-spacing: 3px;
       margin-bottom: 0.5rem;
     }
     p {
       font-size: 1.2rem;
       color: #bbb;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
     .links {
       display: flex;
@@ -42,7 +57,7 @@
       text-decoration: none;
       font-size: 1.1rem;
       font-weight: bold;
-      transition: all 0.2s ease;
+      transition: all 0.3s ease;
     }
     /* Platform colors */
     a.spotify { background: #1DB954; color: #fff; }
@@ -53,22 +68,25 @@
     a.instagram { background: #E1306C; color: #fff; }
     a.tiktok { background: #010101; border: 2px solid #fff; color: #fff; }
     a.email { background: #333; color: #fff; }
-    a:hover { opacity: 0.85; transform: translateY(-2px); }
+    a:hover { transform: scale(1.05); opacity: 0.9; }
   </style>
 </head>
 <body>
-  <h1>Khayyat</h1>
-  <p>Producer • Sound Designer • SVNBIRDS</p>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Khayyat</h1>
+    <p>Producer • Sound Designer • SVNBIRDS</p>
 
-  <div class="links">
-    <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut?si=vcQuqRvcQMGZUPyvrr7gXQ" target="_blank" class="spotify">Spotify</a>
-    <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank" class="apple">Apple Music</a>
-    <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank" class="youtube">YouTube</a>
-    <a href="https://play.anghami.com/artist/6728735" target="_blank" class="anghami">Anghami</a>
-    <a href="https://soundcloud.com/khvyyvt" target="_blank" class="soundcloud">SoundCloud</a>
-    <a href="https://www.instagram.com/justkhayyat" target="_blank" class="instagram">Instagram</a>
-    <a href="https://www.tiktok.com/@justkhayyat" target="_blank" class="tiktok">TikTok</a>
-    <a href="mailto:khayyat@svnbirds.com" class="email">Email</a>
+    <div class="links">
+      <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut?si=vcQuqRvcQMGZUPyvrr7gXQ" target="_blank" class="spotify">Spotify</a>
+      <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank" class="apple">Apple Music</a>
+      <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank" class="youtube">YouTube</a>
+      <a href="https://play.anghami.com/artist/6728735" target="_blank" class="anghami">Anghami</a>
+      <a href="https://soundcloud.com/khvyyvt" target="_blank" class="soundcloud">SoundCloud</a>
+      <a href="https://www.instagram.com/justkhayyat" target="_blank" class="instagram">Instagram</a>
+      <a href="https://www.tiktok.com/@justkhayyat" target="_blank" class="tiktok">TikTok</a>
+      <a href="mailto:khayyat@svnbirds.com" class="email">Email</a>
+    </div>
   </div>
 </body>
 </html>

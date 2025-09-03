@@ -8,7 +8,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-  url('assets/bg.jpg') no-repeat center center/cover;
+  url('bg.jpg') no-repeat center center/cover; /* fixed path */
   color: #fff;
   text-align: center;
   min-height: 100vh;

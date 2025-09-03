@@ -126,6 +126,9 @@ iframe {
 .footer {
   margin-top: 60px;
   text-align: center;
+  padding: 40px 20px 20px 20px;
+  background: rgba(0,0,0,0.5);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .contact-button {
@@ -146,6 +149,28 @@ iframe {
   box-shadow: 0 6px 20px rgba(255,60,172,0.6);
 }
 
+.footer-socials {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-socials img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-socials img:hover {
+  transform: scale(1.2);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 10px;
+}
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {
@@ -183,6 +208,10 @@ iframe {
   }
 
   .footer {
-    margin-top: 40px;
+    padding: 30px 15px 15px 15px;
+  }
+
+  .footer-socials img {
+    width: 25px;
   }
 }

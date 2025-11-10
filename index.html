@@ -2,122 +2,287 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khayyat — Producer & Sound Engineer</title>
+  <meta name="description" content="Khayyat is a Palestinian producer and sound engineer sculpting future-wave hip-hop, trap, and experimental worlds for artists and film.">
+  <meta name="keywords" content="Khayyat, producer, sound engineer, beats, trap, hip-hop, SVNBIRDS, Palestinian producer">
+  <link rel="canonical" href="https://justkhayyat.github.io/khayyat/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Khayyat — Producer & Sound Engineer">
+  <meta property="og:description" content="Hire Khayyat for cinematic trap production, engineering, and bespoke sound design.">
+  <meta property="og:url" content="https://justkhayyat.github.io/khayyat/">
+  <meta property="og:image" content="https://justkhayyat.github.io/khayyat/assets/khayyat-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Khayyat — Producer & Sound Engineer">
+  <meta name="twitter:description" content="Producer and mix engineer shaping the WANA sound. Explore beats, credits, and press.">
+  <meta name="twitter:image" content="https://justkhayyat.github.io/khayyat/assets/khayyat-logo.png">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/khayyat-favicon.png">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
-
-  <style>
-    /* Extra styles for Beat Store */
-    .beat-store {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .beat-store h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    .beat-store p {
-      font-size: 1rem;
-      color: #aaa;
-      margin-bottom: 30px;
-    }
-
-    .beat-store iframe {
-      border: none;
-      border-radius: 12px;
-      width: 100%;
-      height: 600px;
-      box-shadow: 0 0 25px rgba(0,0,0,0.6);
-    }
-  </style>
+  <script defer src="assets/app.js"></script>
 </head>
 <body>
-  <!-- LOGO -->
-  <img src="assets/khayyat-logo.png" alt="Khayyat Logo" class="logo">
+  <div class="page">
+    <header class="hero" id="top">
+      <video class="hero__bg" src="https://cdn.coverr.co/videos/coverr-mixing-board-3755/1080p.mp4" poster="assets/bg.jpg" autoplay muted loop playsinline></video>
+      <div class="hero__overlay"></div>
+      <nav class="nav">
+        <a class="nav__logo" href="#top" aria-label="Khayyat home">
+          <img src="assets/khayyat-logo.png" alt="Khayyat logo">
+        </a>
+        <button class="nav__menu" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav__links" id="primary-navigation">
+          <a href="#beats">Beats</a>
+          <a href="#beat-store">Beat Store</a>
+          <a href="#about">About</a>
+          <a href="#press">Press</a>
+          <a href="#credits">Credits</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn--nav" href="mailto:khayyat@svnbirds.com">Hire Me</a>
+        </div>
+      </nav>
 
-  <!-- BIO -->
-  <section class="bio">
-    <p>
-      Khayyat is a Palestinian producer and sound engineer, co-founder of SVNBIRDS, and a key force behind the region’s cutting-edge hip-hop and trap sounds. He’s worked with top WANA artists and has tracks featured on Hulu’s Ramy and Netflix’s Clickbait, bringing his unique sound from the region to the world.
-    </p>
-  </section>
+      <div class="hero__content reveal">
+        <span class="hero__kicker">Producer • Mix Engineer • Sound Designer</span>
+        <h1>Future-proof sound built for artists, film, and culture.</h1>
+        <p>
+          Khayyat sculpts widescreen trap and genre-fluid atmospheres for the WANA region and beyond—crafting beats, mixing
+          records, and engineering immersive worlds for artists and screen.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#beats">Listen</a>
+          <a class="btn btn--outline" href="#beat-store">Beat Store</a>
+          <a class="btn btn--ghost" href="mailto:khayyat@svnbirds.com">Hire Me</a>
+        </div>
+        <div class="hero__preview" data-visualizer>
+          <button class="preview__button" data-preview-toggle>
+            <span>Play latest beat preview</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
+          </button>
+          <canvas id="hero-wave" width="480" height="140" aria-hidden="true"></canvas>
+          <audio id="hero-audio" preload="none" src="https://cdn.pixabay.com/download/audio/2022/02/17/audio_e4a5905b33.mp3?filename=808-future-bounce-18953.mp3"></audio>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24"><path d="M12 5v14m0 0l-5-5m5 5l5-5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+    </header>
 
-  <!-- LINKS -->
-  <div class="links">
-    <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut" target="_blank">
-      <img src="assets/spotify.png" alt="Spotify">
-    </a>
-    <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank">
-      <img src="assets/apple.png" alt="Apple Music">
-    </a>
-    <a href="https://soundcloud.com/khvyyvt" target="_blank">
-      <img src="assets/soundcloud.png" alt="SoundCloud">
-    </a>
-    <a href="https://www.instagram.com/justkhayyat" target="_blank">
-      <img src="assets/instagram.png" alt="Instagram">
-    </a>
-    <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank">
-      <img src="assets/youtube.png" alt="YouTube">
-    </a>
-    <a href="https://www.tiktok.com/@justkhayyat" target="_blank">
-      <img src="assets/tiktok.png" alt="TikTok">
-    </a>
+    <main>
+      <section class="section beats" id="beats">
+        <div class="section__intro">
+          <span class="eyebrow">Beat Showcase</span>
+          <h2 class="section__title">Hover to preview the newest drops.</h2>
+          <p class="section__subtitle">Each beat reacts in real-time—lock in the energy before you license.</p>
+        </div>
+        <div class="beats__grid">
+          <article class="beat-card reveal" data-beat>
+            <header class="beat-card__meta">
+              <h3>Midnight Mirage</h3>
+              <p>Trap • 140 BPM • Key: F# Minor</p>
+            </header>
+            <canvas class="beat-card__wave" width="420" height="120" aria-hidden="true"></canvas>
+            <audio preload="none" src="https://cdn.pixabay.com/download/audio/2022/01/17/audio_3f89628cf8.mp3?filename=retro-trap-loop-13819.mp3"></audio>
+            <footer class="beat-card__actions">
+              <button class="btn btn--ghost" data-play="hover">Tap to preview</button>
+              <a class="btn btn--text" href="#beat-store">License</a>
+            </footer>
+          </article>
+          <article class="beat-card reveal" data-beat>
+            <header class="beat-card__meta">
+              <h3>Neon Dunes</h3>
+              <p>Hybrid Bass • 128 BPM • Key: D Minor</p>
+            </header>
+            <canvas class="beat-card__wave" width="420" height="120" aria-hidden="true"></canvas>
+            <audio preload="none" src="https://cdn.pixabay.com/download/audio/2022/02/23/audio_c564f5907a.mp3?filename=cyberpunk-moonlight-20450.mp3"></audio>
+            <footer class="beat-card__actions">
+              <button class="btn btn--ghost" data-play="hover">Tap to preview</button>
+              <a class="btn btn--text" href="#beat-store">License</a>
+            </footer>
+          </article>
+          <article class="beat-card reveal" data-beat>
+            <header class="beat-card__meta">
+              <h3>Grainstorm</h3>
+              <p>Drill • 144 BPM • Key: B Minor</p>
+            </header>
+            <canvas class="beat-card__wave" width="420" height="120" aria-hidden="true"></canvas>
+            <audio preload="none" src="https://cdn.pixabay.com/download/audio/2022/02/11/audio_8a0dacf7d2.mp3?filename=drill-fuse-18559.mp3"></audio>
+            <footer class="beat-card__actions">
+              <button class="btn btn--ghost" data-play="hover">Tap to preview</button>
+              <a class="btn btn--text" href="#beat-store">License</a>
+            </footer>
+          </article>
+          <article class="beat-card reveal" data-beat>
+            <header class="beat-card__meta">
+              <h3>Signal Bloom</h3>
+              <p>Ambient Trap • 110 BPM • Key: E Minor</p>
+            </header>
+            <canvas class="beat-card__wave" width="420" height="120" aria-hidden="true"></canvas>
+            <audio preload="none" src="https://cdn.pixabay.com/download/audio/2022/02/07/audio_d2a9efa763.mp3?filename=chill-abstract-intention-17813.mp3"></audio>
+            <footer class="beat-card__actions">
+              <button class="btn btn--ghost" data-play="hover">Tap to preview</button>
+              <a class="btn btn--text" href="#beat-store">License</a>
+            </footer>
+          </article>
+        </div>
+        <p class="beats__note">Hover or tap a card to hear a live-reacting waveform. Longer form previews and stems live in the Beat Store.</p>
+      </section>
+
+      <section class="section section--alt beat-store" id="beat-store">
+        <div class="section__intro">
+          <span class="eyebrow">Beat Store</span>
+          <h2 class="section__title">Secure your next record-ready beat.</h2>
+          <p class="section__subtitle">Browse exclusive drops, instant delivery, and flexible licensing direct from Khayyat.</p>
+        </div>
+        <div class="store__embed reveal">
+          <iframe src="https://solo.airbit.com/3160247?store=1" loading="lazy" title="Khayyat Beat Store" allow="autoplay"></iframe>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section__intro">
+          <span class="eyebrow">About</span>
+          <h2 class="section__title">Engineering the sonic blueprint for the WANA wave.</h2>
+        </div>
+        <div class="tile-grid">
+          <article class="tile reveal">
+            <h3>Founder energy</h3>
+            <p>Co-founder of SVNBIRDS, shaping the collective’s sound across production, A&R, and sonic identity.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Screen-ready sound</h3>
+            <p>Placements include Hulu’s <em>Ramy</em> and Netflix’s <em>Clickbait</em>, delivering hybrid cues built for sync.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Artist-first mixing</h3>
+            <p>Trusted by top WANA artists for crisp, spacious mixes that translate from underground venues to streaming.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Global workflow</h3>
+            <p>Remote-ready production pipeline with secure stem exchange, versioning, and rapid revisions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt press" id="press">
+        <div class="section__intro">
+          <span class="eyebrow">Press</span>
+          <h2 class="section__title">Featured in global music and culture outlets.</h2>
+        </div>
+        <div class="tile-grid tile-grid--press">
+          <article class="tile tile--press reveal">
+            <p class="tile__source">SceneNoise</p>
+            <a href="https://scenenoise.com/New-Music/Tageel-and-Khayyat-Delve-Into-Atmospheric-Trap-in-Langa" target="_blank" rel="noopener">Tageel and Khayyat Delve Into Atmospheric Trap in “Langa”</a>
+          </article>
+          <article class="tile tile--press reveal">
+            <p class="tile__source">DeathOrDesire</p>
+            <a href="https://www.deathordesire.com/post/khayyat-x-77-x-cliff-introduce-their-amazing-track-cold" target="_blank" rel="noopener">Khayyat x 77 x Cliff Introduce Their Track “Cold”</a>
+          </article>
+          <article class="tile tile--press reveal">
+            <p class="tile__source">SceneNoise</p>
+            <a href="https://scenenoise.com/Features/Here-are-All-the-Arab-Songs-You-Can-Hear-on-Season-Three-of-Ramy" target="_blank" rel="noopener">Arab Songs to Hear on Season Three of <em>Ramy</em></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section credits" id="credits">
+        <div class="section__intro">
+          <span class="eyebrow">Credits</span>
+          <h2 class="section__title">Recent collaborators and highlight placements.</h2>
+        </div>
+        <div class="tile-grid tile-grid--credits">
+          <article class="tile reveal">
+            <h3>SVNBIRDS</h3>
+            <p>Co-founded collective and label, executive producing forward-facing trap releases.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Ramy (Hulu)</h3>
+            <p>Music production and engineering for pivotal season three cues.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Clickbait (Netflix)</h3>
+            <p>Sound design and atmospheric layering for dramatic sequences.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Tayar, Synaptik, BLVXB</h3>
+            <p>Singles and EPs engineered with pristine low-end and cinematic depth.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Festival stages</h3>
+            <p>Live show programming for Boiler Room, Sole DXB, and region-wide showcases.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Mix & Mastering</h3>
+            <p>Full-service mix/master suites with Dolby-ready deliverables.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section ctas" id="contact">
+        <div class="cta-panel reveal">
+          <h2>Need bespoke production?</h2>
+          <p>Lock in custom beats, score your film, or book mix/master time with a single email.</p>
+          <div class="cta-panel__actions">
+            <a class="btn btn--primary" href="mailto:khayyat@svnbirds.com">Hire Me</a>
+            <a class="btn btn--outline" href="https://solo.airbit.com/3160247?store=1" target="_blank" rel="noopener">Beat Store</a>
+            <a class="btn btn--ghost" href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut" target="_blank" rel="noopener">Listen</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__meta">
+        <img src="assets/khayyat-logo.png" alt="Khayyat logo">
+        <p>© 2025 Khayyat / SVNBIRDS. Crafted in Palestine.</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut" target="_blank" rel="noopener" aria-label="Spotify">
+          <img src="assets/spotify.png" alt="Spotify">
+        </a>
+        <a href="https://music.apple.com/us/artist/khayyat/1506357526" target="_blank" rel="noopener" aria-label="Apple Music">
+          <img src="assets/apple.png" alt="Apple Music">
+        </a>
+        <a href="https://soundcloud.com/khvyyvt" target="_blank" rel="noopener" aria-label="SoundCloud">
+          <img src="assets/soundcloud.png" alt="SoundCloud">
+        </a>
+        <a href="https://www.instagram.com/justkhayyat" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="assets/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/channel/UCFMWgyOG83sIt6dW6zplMyg" target="_blank" rel="noopener" aria-label="YouTube">
+          <img src="assets/youtube.png" alt="YouTube">
+        </a>
+        <a href="https://www.tiktok.com/@justkhayyat" target="_blank" rel="noopener" aria-label="TikTok">
+          <img src="assets/tiktok.png" alt="TikTok">
+        </a>
+        <a href="mailto:khayyat@svnbirds.com" aria-label="Email">
+          <img src="assets/email.png" alt="Email">
+        </a>
+      </div>
+    </footer>
   </div>
 
-  <!-- FEATURED WORK -->
-  <section class="featured">
-    <h2>Featured Work</h2>
-    <!-- Spotify embed -->
-    <iframe src="https://open.spotify.com/embed/artist/0ZymXKuHy9Sqg2X5IEwLut?utm_source=generator" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-    <!-- YouTube embed -->
-    <iframe src="https://www.youtube.com/embed/4TK4TTx7ivg" height="400" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </section>
-
-  <!-- BEAT STORE -->
-  <section class="beat-store">
-    <h2>Beat Store</h2>
-    <p>Browse, preview, and purchase beats directly below.</p>
-    <iframe 
-      src="https://solo.airbit.com/3160247?store=1" 
-      scrolling="no">
-    </iframe>
-  </section>
-
-  <!-- PRESS -->
-  <section class="press">
-    <h2>Press</h2>
-    <div class="press-links">
-      <a href="https://scenenoise.com/New-Music/Tageel-and-Khayyat-Delve-Into-Atmospheric-Trap-in-Langa" target="_blank">
-        SceneNoise — Tageel and Khayyat Delve Into Atmospheric Trap in ‘Langa’
-      </a>
-      <a href="https://www.deathordesire.com/post/khayyat-x-77-x-cliff-introduce-their-amazing-track-cold" target="_blank">
-        DeathOrDesire — Khayyat x 77 x Cliff Introduce Their Amazing Track ‘Cold’
-      </a>
-      <a href="https://scenenoise.com/Features/Here-are-All-the-Arab-Songs-You-Can-Hear-on-Season-Three-of-Ramy" target="_blank">
-        SceneNoise — All the Arab Songs You Can Hear on Season Three of Ramy
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <a href="mailto:khayyat@svnbirds.com" class="footer-email">
-      <img src="assets/email.png" alt="Email">
-    </a>
-    <p class="copyright">© 2025 Khayyat / SVNBIRDS</p>
-  </footer>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Khayyat",
+    "jobTitle": "Music Producer & Sound Engineer",
+    "url": "https://justkhayyat.github.io/khayyat/",
+    "image": "https://justkhayyat.github.io/khayyat/assets/khayyat-logo.png",
+    "sameAs": [
+      "https://open.spotify.com/artist/0ZymXKuHy9Sqg2X5IEwLut",
+      "https://soundcloud.com/khvyyvt",
+      "https://www.instagram.com/justkhayyat"
+    ]
+  }
+  </script>
 </body>
 </html>
